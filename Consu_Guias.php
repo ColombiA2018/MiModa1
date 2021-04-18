@@ -157,14 +157,22 @@ $result = mysqli_query($conn, $query_tras);
     if (!$result){
         die("Fallo Guardando Traslado");
     }
+	
+	//generacion de pdf
+	
+	$pdf_content= $soapResponse->pdf_guia;
+	//Decode pdf content
+	$pdf_decoded = base64_decode ($pdf_content);
+	//se almacena el pdf en la carpeta archivos, se le da como nombre el mismo numero de guia
+	$pdf = fopen ('Archivos/'.$new_guia.'.pdf','w');
+	fwrite ($pdf,$pdf_decoded);
+	//close output file
+	fclose ($pdf);
+	
+	//mostrar por mensaje del numero de guia y subventana con pdf
 
-
-
-//mostrar por mensaje del numero de guia
-
-echo'<script type="text/javascript">
-    alert("Guia Guardada : '.$new_guia.'");
-    </script>';
-
-
+	echo'<script type="text/javascript">
+		alert("Guia Guardada : '.$new_guia.'");
+		window.open("Archivos/'.$new_guia.'.pdf","_blank","width=850,height=400");
+		</script>';
 };

@@ -3,7 +3,7 @@
 include("Conexion.php");
 
 if(isset($_POST['Cancelar'])){
-    header("location: tiendas.php");
+    header("location: tiendas.php");    
 }
 
 if (isset($_POST['save_guia'])){

@@ -1,7 +1,6 @@
 <!--menus de navegacion-->
 <div class="menu-btn">
-        <i class="fast fa-bars"></i>
-        </div>
+        
         <div class="container">
             <nav class="nav-main">
                 <img src="./img/logo.png" alt="" class="nav-brand">
@@ -11,7 +10,7 @@
                         <a href="Guia.php"><i class="icon-user"> Generar envio</a></i>
                     </li>
                     <li>
-                        <a href="rastreo.php">Rastrear envio</a>
+                        <a href="Trazabilidad.php">Rastrear envio</a>
                     </li>
                     <li>
                         <a href="tiendas.php">Datos Tiendas</a>
@@ -27,6 +26,7 @@
                     </li>
                 </ul>
             </nav>
+            
             ==============================================================================================================================================================================
 
     

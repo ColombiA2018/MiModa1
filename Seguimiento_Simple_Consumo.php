@@ -8,7 +8,7 @@
     <?php
 
     $url ='https://ws.coordinadora.com/ags/1.5/server.php?wsdl';
-    $client = new SoapClient( $url, ['soap_version' => SOAP_1_1,'trace' => 1, 'exceptions' => 0]);
+    $client = new SoapClient( $url, ['soap_version' => SOAP_1_1,'trace' => 1, ' ' => 0]);
     
 
     $guias_enviar = $_GET['guia_Cons'];

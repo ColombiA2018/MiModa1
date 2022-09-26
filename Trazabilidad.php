@@ -32,7 +32,7 @@ ON traslados.id_tienda = tiendas.id_tienda"
 while($row=mysqli_fetch_assoc($resultados)) { ?>
 <tbody>
 <tr>    
-<td><?php echo $row["id_traslados"];?></td>
+<td><?php echo $row["id"];?></td>
 <td><?php echo $row["Nombre_tienda"];?></td>
 <td><?php echo $row["numero_remision"];?></td>
 <td>

@@ -16,6 +16,9 @@
                         <a href="tiendas.php">Datos Tiendas</a>
                     </li>
                     <li>
+                        <a href="Form_Cotizador.php">Cotizador</a>
+                    </li>
+                    <li>
                         <a href="index.php">Inicio</a>
                     </li>
                 </ul>
